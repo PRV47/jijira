@@ -1,6 +1,8 @@
 # Proyecto JIJIRA - Piers Rideout, Ramiro Ferrari, Nazareno Fiorreti
 
 Aplicacion para gestion de tareas y sprints, desarrollada con React, TypseScript y MongoDB
+Para Laboratorio 4 con el profesor Franco Gonzales
+Universidad Tecnologica Nacional Facultad Regional Mendoza
 
 ## Requisitos Previos
 
