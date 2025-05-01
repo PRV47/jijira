@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# Proyecto JIJIRA - Piers Rideout, Rmairo Ferrari, Nazareno Fiorreti
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicacion para gestion de tareas y sprints, desarrollada con React, TypseScript y MongoDB
 
-Currently, two official plugins are available:
+## Requisitos Previos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js
+- MongoDB Atlas
+- Postman
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Para ver la pagina usando vite, ejecutar:
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Si no tiene Vite, ejecutar primero:
+```bash
+npm install
 ```
+La aplicación se iniciará en http://localhost:5173
+
+Para iniicar el servidor, correr:
+```bash
+cd server
+node index.js
+```
+El servidor se iniciará en http://localhost:3001
+
+
+### Endpoints
+#### Tareas
+- GET `http://localhost:3001/tareas` - Obtener todas las tareas
+- POST `http://localhost:3001/tareas` - Crear una nueva tarea
+  ```json
+  {
+    "titulo": "Tarea de prueba",
+    "descripcion": "Descripción de prueba",
+    "fechaLimite": "2025-05-10",
+    "estado": "backlog"
+  }
+  ```
+- PUT `http://localhost:3001/tareas/:id` - Actualiza una tarea
+- DELETE `http://localhost:3001/tareas/:id` - Elimina una tarea
+
+#### Sprints
+- GET `http://localhost:3001/sprints` - Obtener todas las sprints
+- POST `http://localhost:3001/sprints` - Crear una nueva sprint
+  ```json
+  {
+    "title": "Sprint de prueba",
+    "description": "Descripción del sprint",
+    "startDate": "2025-05-10",
+    "endDate": "2025-05-15",
+    "tareas": []
+  }
+  ```
+- PUT `http://localhost:3001/sprints/:id` - Actualiza una sprint
+- DELETE `http://localhost:3001/sprints/:id` - Elimina una sprint
