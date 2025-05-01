@@ -1,0 +1,73 @@
+.cardSprintSideContenedor {
+    background-color: rgb(127, 255, 176);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgb(114, 114, 114);
+}
+
+.cardSprintSideContenedor:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    background-color: rgb(127, 255, 176);
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.cardSprintSideContenedor.active {
+    background-color: #60b5c0;
+    color: white;
+}
+
+.botoneraCardSprint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botonCardVerSprint,
+.botonCardEditarSprint,
+.botonCardEliminarSprint {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.botonCardVerSprint img,
+.botonCardEditarSprint img,
+.botonCardEliminarSprint img {
+    height: 24px;
+    width: 24px;
+}
+
+.botonCardVerSprint {
+    background-color: #b445e7;
+}
+
+.botonCardVerSprint:hover {
+    background-color: rgb(45, 179, 197);
+    transition: all 0.3s ease;
+}
+
+.botonCardEditarSprint {
+    background-color: #b445e7;
+}
+
+.botonCardEditarSprint:hover {
+    background-color: rgb(45, 179, 197);
+    transition: all 0.3s ease;
+}
+
+.botonCardEliminarSprint {
+    background-color: rgb(255, 0, 0);
+}
+
+.botonCardEliminarSprint:hover {
+    background-color: rgb(212, 0, 0);
+    transition: all 0.3s ease;
+}

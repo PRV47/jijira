@@ -1,0 +1,70 @@
+.taskCard {
+    background-color: #dbffea;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.taskCard h5 {
+    margin-bottom: 5px;
+}
+
+.taskCard p {
+    margin: 5px 0;
+}
+
+.taskCardButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnBacklog {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnIcon {
+    background-color: rgb(54, 220, 241);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnIcon img {
+    height: 20px;
+    width: 20px;
+}
+
+.btnDelete {
+    background-color: red;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnDelete img {
+    height: 20px;
+    width: 20px;
+}
+
+.btnChevron {
+    background-color: orange;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnChevron img {
+    height: 20px;
+    width: 20px;
+}

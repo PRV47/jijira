@@ -1,0 +1,83 @@
+.tituloBoton {
+    display: flex;
+    flex-direction: row;
+}
+
+.tituloBoton button {
+    margin-left: 150px;
+}
+
+.ListTareaEstiloGeneral {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blurredBackground {
+    position: relative;
+}
+
+.blurredBackground::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+.formularioModal {
+    position: fixed;
+    z-index: 20;
+}
+
+.headerBacklog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 10px;
+}
+
+.headerActions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.btnVolver, .btnCrear {
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btnVolver {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.btnVolver:hover {
+    background: #bdbdbd;
+}
+
+.btnCrear {
+    background: #36dcf1;
+    color: #fff;
+}
+
+.btnCrear:hover {
+    background: #1bb6d6;
+}
+

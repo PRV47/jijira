@@ -1,0 +1,63 @@
+{
+  "backlog": {
+    "tareas": [
+      {
+        "id": "1746131601381",
+        "titulo": "Ejep,lo 1",
+        "descripcion": "2132231",
+        "fechaLimite": "2025-05-08",
+        "estado": "backlog"
+      }
+    ]
+  },
+  "sprintList": {
+    "sprints": [
+      {
+        "id": "1745539241544",
+        "title": "sprint test 4",
+        "description": "sprint test 4",
+        "startDate": "2025-03-04",
+        "endDate": "2025-11-05",
+        "tareas": []
+      },
+      {
+        "id": "1745539255425",
+        "title": "sprint test 2",
+        "description": "sprint test 2",
+        "startDate": "0212-12-23",
+        "endDate": "0002-03-02",
+        "tareas": [
+          {
+            "titulo": "tarea test 2",
+            "descripcion": "tarea test 2",
+            "fechaLimite": "0231-03-12",
+            "estado": "pendiente",
+            "id": "1745539197462"
+          },
+          {
+            "id": "1745539189366",
+            "titulo": "coso poco",
+            "descripcion": "tarea test 1",
+            "fechaLimite": "0223-03-31",
+            "estado": "en_progreso"
+          },
+          {
+            "titulo": "sprinssst test 1 23",
+            "descripcion": "sad",
+            "fechaLimite": "0123-03-12",
+            "estado": "pendiente",
+            "id": "1745539315431"
+          }
+        ]
+      },
+      {
+        "id": "1746131669121",
+        "title": "sprint test 5",
+        "description": "sprint test 5",
+        "startDate": "2025-05-22",
+        "endDate": "2025-05-30",
+        "tareas": []
+      }
+    ]
+  }
+}
