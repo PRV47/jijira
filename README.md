@@ -1,4 +1,4 @@
-# Proyecto JIJIRA - Piers Rideout, Rmairo Ferrari, Nazareno Fiorreti
+# Proyecto JIJIRA - Piers Rideout, Ramiro Ferrari, Nazareno Fiorreti
 
 Aplicacion para gestion de tareas y sprints, desarrollada con React, TypseScript y MongoDB
 
